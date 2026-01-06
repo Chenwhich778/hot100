@@ -1,0 +1,36 @@
+# --- 编译产物 (Binary Outputs) ---
+# 过滤掉所有没有后缀的可执行文件（macOS 编译结果）
+*
+!*/
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+!*.txt
+!.gitignore
+
+# 过滤掉常见的二进制后缀
+*.exe
+*.o
+*.obj
+*.out
+
+# --- macOS 系统文件 ---
+.DS_Store
+*.dSYM/
+
+# --- 编译文件夹 ---
+# 如果你习惯把编译结果放进 output 文件夹
+output/
+bin/
+build/
+
+# --- VS Code 相关 ---
+.vscode/ipch/
+.vscode/msvc/
+*.swp
+*.swo
+
+# 如果你不想把调试配置上传（可选）
+# .vscode/launch.json
+# .vscode/tasks.json
